@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* -----------------------------------------------------
+
+* Theme Name: Cup of Tea Creations
+* Theme URI: http://www.cupofteacreations.com
+* Version: 3.2
+* Author: Dana Severance
+* Author URI: http://www.cupofteacreations.com/ 
+
+== ANCHORS ===========================================
+
+	@reset				Standard Reset
+	@general
+	@header
+	@footer
+	@content
+	@alert
+
+-------------------------------------------------------*/
+
+/* @reset - based on html5reset.com
+-------------------------------------------------------*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {background: transparent; border: 0; font-size: 100%; margin: 0; outline: 0; padding: 0; vertical-align: baseline;}
+body {line-height: 1;}
+focus {outline: 1;}
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {display: block;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
+a, img {border: 0; outline: none;}
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+table {border-collapse: collapse; border-spacing: 0;}
+input, select {vertical-align: middle;}
+
+/* @general
+-------------------------------------------------------*/
+html {height: 100%;}
+body {background: #fff url('/img/body.png'); display: block; min-height: 100%; position: relative; width: 100%;}
+body, input, select, textarea {font: 14px/18px 'Helvetica', 'Arial', sans-serif;}
+.wrap {margin: 0 0 -50px; padding: 120px 0 50px;}
+
+	/* @typography */
+	h1 {font-size: 50px; line-height: 56px; padding-bottom: 30px;}
+	h2 {clear: both; font-size: 48px; line-height: 50px; padding-bottom: 30px;}
+	ul, li {padding-bottom: 10px;}
+	p {padding-bottom: 20px;}
+	a {color: #646277; text-decoration: none;}
+	a:hover {text-decoration: underline;}
+
+/* @header
+-------------------------------------------------------*/
+#header {background: #111 url('/img/header.png'); border-bottom: 2px solid #000; color: #FFF; height: 75px; position: fixed; width: 100%; z-index: 8;}
+	#logo {bottom: -60px; position: absolute; left: 50%; margin-left: -58px;}
+	#header nav {padding: 8px 40px 0; position: relative; z-index: 9;}
+		#header ul {list-style: none; display: block; width: 100%;}
+		#header li {float: left; text-align: center; width: 25%;}
+		#header a {color: #fff;}
+		#header a:hover {color: #ccc; text-decoration: none;}
+	
+/* @footer
+-------------------------------------------------------*/
+#footer {background: #111 url('/img/header.png'); border-top: 2px solid #000; bottom: 0; height: 50px; left: 0; margin: 40px 0 0; position: absolute; width: 100%;}
+	#footer p {color: #FFF; font-size: 12px; line-height: 50px; padding: 0; text-align: center;}
+
+/* @content
+-------------------------------------------------------*/
+section {margin: 0 auto; padding: 20px 20px; position: relative; overflow: auto; max-width: 920px;}
+	#avatar {border: 1px solid #ebe8cc; display: block; float: right; margin: 0 0 -90px 20px; position: relative; top: -120px; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px;}
+
+	.service-list {margin-left: 40px;}
+	#fees {clear: right; float: right; padding-top: 10px; width: 300px;}
+		#fees dt {clear: both; float: left;}
+		#fees dd {color: #202020; font-size: 50px; margin-left: 60px; padding: 5px 0 50px;}
+		
+	#main #portfolio {background: #4d4d4d; border: 1px solid #606060; border-width: 1px 0; color: #fff; margin: 20px auto; padding: 60px inherit; max-width: 100%;}
+	#portfolio div {display: block; padding: auto 20px; margin: 0 auto; overflow: auto; max-width: 920px;}
+		#portfolio h1 {padding-bottom: 40px;}
+		#portfolio ul {display: block; list-style: none; margin: 0 auto; max-width: 700px}
+		#portfolio li {display: inline-block; float: left; text-align: center; width: 33%;}
+		#portfolio p {clear: both; padding-top: 20px; text-align: right;}
+		#portfolio a {color: #d5d5d6;}
+		
+	#contact form {margin: 0 auto; max-width: 300px;}
+		#contact ul {list-style: none;}
+			#contact label {display: block; padding: 5px 0 8px; width: 100%;}
+			#contact li input, #contact textarea {padding: 5px 2%; width: 96%;}
+			#contact #msg {height: 60px;}
+			#contact .singular {padding: 5px 0; text-align: center;}
+				#contact .singular label {display: inline;}
+				#contact .singular input {padding: 2px 3px; text-align: baseline; width: 60px;}
+			#contact input[type=submit] {display: block; font-size: 16px; margin: 0 auto; padding: 5px 8px; text-align: center;}		
+		#contact .error {color: #880000;}
+		
+	/* alert boxes */
+	.alert-box {margin: 0 0 10px 0; margin: 0 auto 20px; max-width: 500px;}
+		.alert-box p {padding: 10px 10px 10px 40px;}
+		.alert-box .warning {background: #fffbcc url("/img/warning.png") no-repeat 10px 50%; border: 1px solid #f7a003;}
+		.alert-box .confirm {background: #ceffbf url("/img/okay.png") no-repeat 10px 50%; border: 1px solid #18b301;}
+		.alert-box .error {background: #fccccc url("/img/error.png") no-repeat 10px 50%; border: 1px solid #d82727;}
+		.alert-box .info {background: #bfd0ff url("/img/info.png") no-repeat 10px 50%; border: 1px solid #2462ff;}
+		.alert-box .help {background: #bfd0ff url("/img/help.png") no-repeat 10px 50%; border: 1px solid #2462ff;}
+		
+/* slim mobile */
+@media screen and (max-width: 524px) {
+	#portfolio li {float: none; margin-bottom: 20px; width: 100%;}
+	#portfolio p {padding-top: 0;}
+}
+
+/* wide mobile */
+@media screen and (max-width: 758px) {
+	.wrap {padding-top: 200px;}
+	#header {height: 140px;}
+
+	#avatar {float: none; margin: 0 auto 30px; top: 0;}
+	#fees {float: none; margin: 0 auto;}
+}

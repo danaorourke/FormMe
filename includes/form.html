@@ -1,0 +1,27 @@
+<form action="<?php echo $SERVER['PHP_SELF']; ?>#contact" method="post">
+	<fieldset>
+		<ul>
+			<li><label for="name">Name:</label><input type="text" id="name" name="name" value=""></li>
+			<li><label for="email">Email:</label><input type="email" id="email" name="email" value=""></li>
+			<li><label for="msg">Message:</label><textarea id="msg" name="msg"></textarea></li>
+			<li class="singular"><label for="robots">The word for 12-1 is </label><input type="text" id="robots" name="robots" value=""> .</li>
+		</ul>
+		<input type="submit" id="submit" name="submit" value="Send Email">
+	</fieldset>
+</form>
+
+
+/*if ( isset($_POST['submit']) ) {
+	if ($form->gatherCleanData()) {
+		if ($form->testReqFields()) {
+			if ($form->validateEmail()) {
+				$data = $form->getdata();
+				$email = new Email('dana@cupofteacreations.com', $data, 'Website Form Submission');
+				if ($email->sendE()) {$form->setAlert('confirm', 'Email sent. You should hear back from us shortly!');} else {$form->setAlert('error', 'Email not sent. Please contact the domain administrator at dana@cupofteacreations.com');}
+			} else {$form->setAlert('error', 'The email supplied is invalid. We have highlighted the field for you.');}
+		} else {$form->setAlert('error', 'Required fields were left blank.');}
+	}
+	$form->displayForm();
+} else {
+	$form->displayForm();
+}*/
