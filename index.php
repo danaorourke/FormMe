@@ -1,8 +1,14 @@
 <?php
 require_once('includes/init.php');
 
-if ($inc == TRUE) {
-// included
+
+	$bodyid = 'contact';
+	$title = 'Form Me';
+	
+	require_once('includes/header.php');
+	echo '<section>';
+	echo '<h1>Need a longer form?</h1>';
+
 	$fields = $req = array('name', 'email', 'msg', 'robots');
 	$form = new Form($fields,$req);
 	
@@ -25,17 +31,6 @@ if ($inc == TRUE) {
 	}
 	$form->displayForm();
 
-	
-} else {
-// individual page
-	$bodyid = 'contact';
-	$title = 'Form Me';
-	
-	require_once('includes/header.php');
-	echo '<section>';
-	echo '<h1>Need a longer form?</h1>';
-	$form = new Form();
-	$form->displayForm();
 	echo '</section>';
 	require_once('includes/footer.php');
-} ?>
+?>
